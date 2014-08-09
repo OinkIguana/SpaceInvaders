@@ -1,7 +1,7 @@
 package spaceinvaders;
 
 /**
- *
+ * Squid like enemy
  * @author Cameron Eldridge
  */
 public class Squid extends Enemy {

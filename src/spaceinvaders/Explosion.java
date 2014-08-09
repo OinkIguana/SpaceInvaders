@@ -3,7 +3,7 @@ package spaceinvaders;
 import java.awt.Graphics;
 
 /**
- *
+ * Explosion particle after enemies die
  * @author Cameron Eldridge
  */
 public class Explosion {
@@ -15,6 +15,7 @@ public class Explosion {
         y = yy;
     }
     public void step() {
+        //Die after a while
         timer--;
     }
     public boolean isDone() {

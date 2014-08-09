@@ -3,7 +3,7 @@ package spaceinvaders;
 import java.awt.Graphics;
 
 /**
- *
+ * Bullet
  * @author Cameron Eldridge
  */
 public class Bullet {
@@ -21,6 +21,7 @@ public class Bullet {
     }
     
     public void step() {
+        //Move up or down
         if(playerBullet) {
             y -= 16;
         } else {

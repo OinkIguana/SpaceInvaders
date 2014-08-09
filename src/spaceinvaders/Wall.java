@@ -3,7 +3,7 @@ package spaceinvaders;
 import java.awt.Graphics;
 
 /**
- *
+ * Defensive walls
  * @author Cameron Eldridge
  */
 public class Wall {
@@ -16,16 +16,12 @@ public class Wall {
         y = yy;
     }
 
-    public void step() {}
-    public void getHit() {health--;}
-    public boolean destroyed(){return (health == 0);}
+    public void step() {} //Does nothing
+    public void getHit() {health--;} //Takes damage
+    public boolean destroyed(){return (health == 0);} //Dies
     public boolean bulletCollision(Bullet b) {
-        if( b.x + b.sprite.w > x && b.x < x + sprite.w &&
-            b.y < y + sprite.h && b.y + b.sprite.h > y) {
-            return true;
-        } else {
-            return false;
-        }
+        return b.x + b.sprite.w > x && b.x < x + sprite.w &&
+                b.y < y + sprite.h && b.y + b.sprite.h > y;
     }
     public void draw(Graphics g) {
         sprite.draw(g, x, y, 4 - health);

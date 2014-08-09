@@ -1,7 +1,7 @@
 package spaceinvaders;
 
 /**
- *
+ * Crab like enemy
  * @author Cameron Eldridge
  */
 public class Crab extends Enemy {

@@ -1,7 +1,7 @@
 package spaceinvaders;
 
 /**
- *
+ * Jellyfish like enemy
  * @author Cameron Eldridge
  */
 public class Jelly extends Enemy {
